@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Layout from './components/Layout/Layout';
 import { User } from './interfaces/User.interface';
 import AddQuote from "./pages/AddQuote/AddQuote";
-import Quotes from './testComponents/Quotes';
+import Quotes from './pages/Quotes/Quotes';
 
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -37,7 +37,7 @@ function App() {
               </Route>
 
               <Route path="/allQuotes" exact>
-                <Quotes quotes={activeUser.quotes} />
+               <Quotes/>
               </Route>
 
               <Route path="/" exact>

@@ -23,6 +23,9 @@ export const ContextProvider: FC = ({ children }) => {
             }
         })
     }
+    const loadQuotes = () => {
+        return
+    }
     const dumbData: AppContextInterface = {
         user: { userID: '', username: "", firstName: "", lastName: "", quotes: [], favouriteQuotes: [] },
         quotes: [],
