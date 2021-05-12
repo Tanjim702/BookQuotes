@@ -1,4 +1,4 @@
-import { FC, useContext, useState } from "react"
+import { FC, useContext, useEffect, useState } from "react"
 import Button from "../../components/Button/Button"
 import InputField from "../../components/InputField/InputField"
 import { User } from "../../interfaces/User.interface"
@@ -8,6 +8,11 @@ import { AppCtx } from "../../state/state";
 import "./SignUp.css"
 const SignUp: FC = () => {
     const data = useContext(AppCtx)
+    useEffect(()=>{
+        fetch("/users")
+            .then(res=>res.json())
+            .then(data=>console.log(data))
+    })
     const [user, setUser] = useState<User>(
         {
             username: "",

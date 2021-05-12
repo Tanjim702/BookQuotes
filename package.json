@@ -22,12 +22,13 @@
   "scripts": {
     "build:css": "node-sass src/ -o src/ ",
     "watch:css": "node-sass src/ -o /src/App.css -w -r",
-    "dev": "concurrently \"yarn watch:css\" \"yarn start\" ",
+    "dev": "json-server db.json --watch --port 5000",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy":"http://localhost:5000",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -46,5 +47,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "json-server": "^0.16.3"
+  }
 }

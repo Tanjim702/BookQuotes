@@ -14,7 +14,12 @@ const Navbar: FC = () => {
             <ul className="navbar__links">
                 <li className="navbar__links--link">
                     <Link to="/allQuotes">
-                        All quotes
+                        Quotes
+                    </Link>
+                </li>
+                <li className="navbar__links--link">
+                    <Link to="/addQuote">
+                        Add a quote
                     </Link>
                 </li>
                 {data?.isAuthenticated === false ?
@@ -37,7 +42,6 @@ const Navbar: FC = () => {
                         </a>
                     </li>
                 }
-                <li className="navbar__links--link">My quotes</li>
             </ul>
         </nav>
     )
