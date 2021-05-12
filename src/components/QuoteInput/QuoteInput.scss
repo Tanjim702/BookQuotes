@@ -1,0 +1,9 @@
+@import "../../scss/abstracts/variables.scss";
+@import "../../scss/mixins/input";
+.quoteInput{
+    width: 100%;
+    min-height: 2rem;
+    //Shared Styles
+    @include inputStyles;
+   
+}

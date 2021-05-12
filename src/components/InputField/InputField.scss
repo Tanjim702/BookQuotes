@@ -1,0 +1,18 @@
+@import "../../scss/abstracts/variables.scss";
+@import "../../scss/mixins/input";
+.inputField{
+    width: 100%;
+    padding: .3em 1em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    & > label {
+        font-size:1.6rem
+    }
+    & > input {
+        @include inputStyles;
+    }
+}

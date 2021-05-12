@@ -1,0 +1,43 @@
+.homepage{
+    height: 100%;
+    display: flex;
+    position: relative;
+
+//    background-image: linear-gradient(0, rgba(254, 178, 45, 0.31) 0%, rgba(254, 178, 45, 0.31) 16.667%,rgba(233, 154, 68, 0.31) 16.667%, rgba(233, 154, 68, 0.31) 33.334%,rgba(212, 131, 91, 0.31) 33.334%, rgba(212, 131, 91, 0.31) 50.001000000000005%,rgba(191, 107, 115, 0.31) 50.001%, rgba(191, 107, 115, 0.31) 66.668%,rgba(170, 84, 138, 0.31) 66.668%, rgba(170, 84, 138, 0.31) 83.33500000000001%,rgba(149, 60, 161, 0.31) 83.335%, rgba(149, 60, 161, 0.31) 100.002%),linear-gradient(331deg, rgb(77, 244, 119) 0%, rgb(77, 244, 119) 14.286%,rgb(76, 233, 127) 14.286%, rgb(76, 233, 127) 28.572%,rgb(75, 221, 136) 28.572%, rgb(75, 221, 136) 42.858%,rgb(74, 210, 144) 42.858%, rgb(74, 210, 144) 57.144%,rgb(72, 198, 152) 57.144%, rgb(72, 198, 152) 71.42999999999999%,rgb(71, 187, 161) 71.43%, rgb(71, 187, 161) 85.71600000000001%,rgb(70, 175, 169) 85.716%, rgb(70, 175, 169) 100.002%);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 1rem;
+    // background-image: url("../../assets/vector.png");
+    // background-clip: polygon();
+    &__background{
+
+        & > img{
+            width: 100%;
+        }
+    }
+    &__main{
+        align-self: flex-end;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+        margin-bottom: 30%;
+
+        &--text{
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+
+        &--btn > *{
+            margin-left: 10px;
+            transition: transform .2s;
+            &:hover{
+                transform: scale(.9);
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import "../../scss/abstracts/variables.scss";
+.navbar{
+    height: $navbar-height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    // background-color: rgba($color-secondary,.1);
+    color: $text-primary;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    // border-bottom: 3px solid $color-primary;  
+    &__logo{
+        font-size: $logo-font-size;
+        letter-spacing: -5px;
+        font-weight: 200;
+    }
+    &__links{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+
+        &--link{
+          padding: 1.5rem 1rem;
+          &:hover{
+              background-color: rgba($color-secondary,.5);
+                
+          }
+        }
+    }
+
+}

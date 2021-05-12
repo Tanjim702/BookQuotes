@@ -1,0 +1,19 @@
+@import "../../scss/abstracts/variables.scss";
+.btn{
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+    background-color: $text-primary;
+    color: $text-secondary;
+
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border:none;
+    outline: none;
+    letter-spacing: 1px;
+    transition: transform .3s;
+    &:hover{
+        transform: scale(.9);
+        cursor: pointer;
+    }
+}
